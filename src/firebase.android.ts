@@ -964,7 +964,7 @@ firebase.login = arg => {
                 firebase._verifyPhoneNumberInProgress = false;
                 firebase.requestPhoneAuthVerificationCode(userResponse => {
                   if (userResponse === undefined && this.reject) {
-                    this.reject("Prompt was canceled");
+                    this.reject("Prompt was canceled!!!!");
                     return;
                   }
                   const authCredential = com.google.firebase.auth.PhoneAuthProvider.getCredential(verificationId, userResponse);
